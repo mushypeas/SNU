@@ -1,0 +1,70 @@
+The dealer starts with a predetermined amount of money (it depends on the game mode).
+The money players lose goes to the dealer.
+The money players win comes from the dealer.
+Make the dealer run out of money(balance)!
+
+General rules follow the classic Blackjack rules:
+
+* Every start of your turn, you choose how much to bet.
+* Every turn, you get two cards to begin with.
+* Make your sum of the value of your cards closest to 21.
+* The value of a card is as follows:
+   - Cards with numbers is worth their numbers (e.g. Six of Diamonds is valued 6)
+   - J, Q, K is valued 10
+   - A is worth either 1 or 11(would be valued automatically)
+   - There is no Joker
+* The dealer starts with two cards. Only one is revealed.
+* Proceed the turn until everyone's turn has ended.
+* After players end their turn, the dealer draws cards.
+   - The dealer must draw until the value is greater than 16. 
+   - The dealer must stop if the value is greater than 16.
+* The dealer's card is revealed.
+   - If your value is greater than the dealer, you win.
+   - If your value is same with the dealer, you push.
+   - If your value is smaller than the dealer, you lose.
+
+ <Rules>
+
+* Blackjack: If the value of one's first hand is 21(e.g. Ace and Queen), it is a Blackjack.
+   - If a player is Blackjack and the dealer isn't, the player wins immediately and earns money.
+	3 to 2 Blackjack gives you * 1.5 of your bet.
+	6 to 5 Blackjack gives you * 1.2 of your bet.
+   - If the dealer is a Blackjack, both cards of the dealer is revealed.
+     Players that aren't Blackjack loses the turn. 
+     Players that are Blackjack pushes.
+
+* Bust: If the value of one's hand exceeds 21, it is a bust.
+   - If a player busts, the player loses the turn.
+   - If a dealer busts, players who didn't bust wins.
+
+* Push: The player doesn't lose or earn money.
+	(* Push is replaced with a win on Easy mode)
+* Win:  The player wins its bet.
+* Lose: The player loses its bet.
+
+ <Acts>
+
+* Surrender:   Loses half of the player's bet immediately and end turn. Can't win or lose.
+
+* Hit:         Draw a card.
+
+* Stand:       End player's turn.
+
+* Double Down: Only available on the first time.
+               Double the player's bet, draw a card and end the player's turn.
+
+* Split:       Only available if the first hand has the same ranks (e.g. Ten of Hearts and Ten of Clubs).
+	       Split the two cards into two hands and draw one card for each split hand.
+	       Split hands could split again if possible.
+	       Split hands can't be Blackjack even if the sum is 21.
+
+* Insurance/
+  Even money:  If the dealer's reveled card is an Ace (High possibility of a Blackjack):
+	          - If a player is a Blackjack, Even money is possible.
+		    Even money pays the player his bet immediately and ends the player's turn.
+		    Players who choose Even money cannot win by Blackjack.
+		  - If a player is not a Blackjack, Insurance is possible.
+		    Player pays half of his bet for insurance (Does not end turn).
+		    If the dealer is Blackjack, the player loses, but earns twice his insurance.
+		    If the dealer is not a Blackjack, the turn continues.
+
